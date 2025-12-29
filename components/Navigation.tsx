@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Book, Activity, Ruler, MessageCircleHeart } from 'lucide-react';
+import { Home, Book, Activity, Ruler, MessageCircle } from 'lucide-react';
 import { ViewState } from '../types';
 
 interface NavigationProps {
@@ -15,7 +15,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, setView, themeColo
     { id: 'diary', icon: Book, label: 'Günlük' },
     { id: 'growth', icon: Ruler, label: 'Gelişim' },
     { id: 'health', icon: Activity, label: 'Aşılar' },
-    { id: 'ai-chat', icon: MessageCircleHeart, label: 'Asistan' },
+    { id: 'ai-chat', icon: MessageCircle, label: 'Asistan' },
   ];
 
   return (
